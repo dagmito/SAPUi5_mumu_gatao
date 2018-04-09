@@ -3,6 +3,27 @@
     xmlns:core="sap.ui.core" 
     xmlns:mvc="sap.ui.core.mvc"
     controllerName="treinamento.ui5.controller.App">
+    
+    <!-- <SplitApp id="splitApp">
+        <masterPages>
+            <Page title="Página Master">
+                <content>
+                    <core:Fragment fragmentName="treinamento.ui5.view.MasterFragment" type="XML"/>
+                </content>
+            </Page>
+        </masterPages>
+        <detailPages>
+            <Page title="Página Detalhe" >
+                <content>
+                    <Panel headerText="Cadê o Botão" expandable="true" >
+                        <content>
+                            <Button text="Pressione-me homem" press="onPress" />
+                        </content>
+                    </Panel>
+                </content>
+            </Page>
+        </detailPages>
+    </SplitApp>
 
     <!-- <SplitApp id="splitApp">
         <masterPages>
@@ -25,28 +46,7 @@
         </detailPages>
     </SplitApp> -->
 
-    <SplitApp id="splitApp">
-        <masterPages>
-            <Page title="Página Master">
-                <content>
-                    <core:Fragment fragmentName="treinamento.ui5.view.MasterFragment" type="XML"/>
-                </content>
-            </Page>
-        </masterPages>
-        <detailPages>
-            <Page title="Página Detalhe" >
-                <content>
-                    <Panel headerText="Cadê o Botão" expandable="true" >
-                        <content>
-                            <Button text="Pressione-me homem" press="onPress" />
-                        </content>
-                    </Panel>
-                </content>
-            </Page>
-        </detailPages>
-    </SplitApp>
-
-    <!-- <App>
+    <App id="app">
         <pages>
             <Page id="page1" title="BILOLACÃO">
                 <content>
@@ -59,6 +59,6 @@
                 </content>
             </Page>
         </pages>
-    </App> -->
+    </App>
 
 </mvc:View>
