@@ -6,6 +6,6 @@
     <Page 
         title="Pagina 2"
         showNavButton="true"
-        navButton="true">
+        navButton="onPress">
     </Page>
 </mvc:View>
