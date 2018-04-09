@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8">
+    <script id="sap-ui-bootstrap" src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m" data-sap-ui-compatVersion="edge" data-sap-ui-preload="async">
+    </script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            var app = new sap.m.App("app", {
+                initialPage: "page1"
+            });
+            var page1 = new sap.m.Page("page1", {
+                title: "Página 1",
+                content: [
+                    new sap.m.Button("button", {
+                        text: "Pressione",
+                        icon: "sap-icon://appear-offline",
+                        press: function () {
+                            app.to("page2");
+                        }
+                    })
+                ]
+            });
+            var page2 = new sap.m.Page("page2", {
+                showNavButton: true,
+                title: "Página 2",
+                navButtonPress: function () {
+                    app.back();
+                }
+            });
+            app.addPage(page1).addPage(page2);
+            app.placeAt("content");
+        });
+    </script>
+</head>
+
+<body class="sapUiBody" id="content">
+</body>
+
+</html>
