@@ -1,8 +1,60 @@
 <core:FragmentDefinition
     xmlns="sap.m"
     xmlns:core="sap.ui.core" >
+    <Panel 
+        headerText="Painel"
+        expandable="true"
+        expanded="true" >
+        <content>
+            <Table 
+                id="tabel" 
+                items="{ path: 'produto>/Produtos' }" >
+                <columns>
+                    <Column>
+                        <header>
+                            <Text text="Status" />
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Nome do Produto" />
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Quantidade" />
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Preço" />
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Nome do Remetente" />
+                        </header>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <ObjectStatus 
+                                icon="{= ${produto>Status} === 'A' ? 'sap-icon://accept' :
+                                         ${produto>Status} === 'B' ? 'sap-icon://alert'  :
+                                         'sap-icon://error'}" 
+                                state="{= ${produto>Status} === 'A' ? 'Success' :
+                                          ${produto>Status} === 'B' ? 'Warning'  :
+                                         'Error'}" />
 
-    <Input id="input" placeholder="Insira o dado no campo" />
-    <Button id="Nilo" press="onPress" text="Nilo"/>
-    
+                            <ObjectIdentifier text="{produto>ProductName}" />
+                            <ObjectNumber number="{produto>Quantity}" />
+                            <ObjectNumber number="{produto>ExtendedPrice}" />
+                            <ObjectIdentifier text="{produto>ShipperName}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Panel>
 </core:FragmentDefinition>
