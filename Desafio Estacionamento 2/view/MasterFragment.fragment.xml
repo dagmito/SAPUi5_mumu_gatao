@@ -1,8 +1,0 @@
-<core:FragmentDefinition
-    xmlns="sap.m"
-    xmlns:core="sap.ui.core" >
-
-    <Input id="input" placeholder="Insira o dado no campo" />
-    <Button id="Nilo" press="onPress" text="Nilo"/>
-    
-</core:FragmentDefinition>

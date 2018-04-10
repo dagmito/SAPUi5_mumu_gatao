@@ -17,6 +17,7 @@ sap.ui.define([
             var oValue = oEvent.getParameter("arguments").value;
             MessageToast.show(oValue);
         },
+        
         onNavPress: function () {
             var oHistory = History.getInstance();
             var sPreviousHash = oHistory.getPreviousHash();
