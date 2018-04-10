@@ -3,9 +3,9 @@
 
 <head>
     <title>Index</title>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <script 
-        id="sap-ui-bootstrap"
+        id="sap-ui-bootstrap" 
         src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" 
         data-sap-ui-theme="sap_belize"
         data-sap-ui-libs="sap.m" 
@@ -16,11 +16,11 @@
         }'>
     </script>
     <script>
-        sap.ui.getCore().attachInit(
+        sap.ui.getCore().attachInit(function () {
             new sap.ui.core.ComponentContainer({
                 name: "treinamento.ui5"
-            })
-        );
+            }).placeAt("content");
+        });
     </script>
 </head>
 

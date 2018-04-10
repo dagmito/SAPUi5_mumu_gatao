@@ -4,17 +4,5 @@
     xmlns:mvc="sap.ui.core.mvc"
     controllerName="treinamento.ui5.controller.App">
     <App id="app">
-        <pages>
-            <Page id="page1" title="BILOLACÃO">
-                <content>
-                    <Panel expandable="true" >
-                        <content>
-                            <Input type="checkbox" id="input" placeholder="Insira um valor" />
-                            <Button text="Pressione" press="onPress" />
-                        </content>
-                    </Panel>
-                </content>
-            </Page>
-        </pages>
     </App>
 </mvc:View>
