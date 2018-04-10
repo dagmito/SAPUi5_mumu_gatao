@@ -19,7 +19,7 @@ sap.ui.define([
         },
 
         onPark: function(){
-            var x;
+            
         }
     });
 });

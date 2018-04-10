@@ -2,7 +2,7 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core" >
 
-    <GenericTile id="vaga1" header="Vaga: Disponível" subheader="Motorista: " press="onPress"
+    <GenericTile id="vaga1" header="Vaga: Disponível" subheader="Motorista: "
         class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://border">
         <tileContent>
             <TileContent>
