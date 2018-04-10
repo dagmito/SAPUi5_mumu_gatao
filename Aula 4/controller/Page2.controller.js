@@ -1,19 +1,20 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], function (Controller) {
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/core/routing/History"
+], function (Controller, History) {
     "use strict";
     return Controller.extend("treinamento.ui5.controller.Page2", {
 
-        onInit: function () {},
+        onNavPress: function () {
+            var oHistory = History.getInstance();
+            var sPreviousHash = oHistory.getPreviousHash();
 
-        onBeforeRendering: function () {},
-
-        onAfterRendering: function () {},
-
-        onExit: function () {},
-
-        onPress: function () {
-
+            if (sPreviousHash !== undefined) {
+                window.history.go(-1);
+            } else {
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("Page1");
+            }
         },
     });
 });
