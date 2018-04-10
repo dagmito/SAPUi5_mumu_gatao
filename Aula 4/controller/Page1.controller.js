@@ -13,7 +13,9 @@ sap.ui.define([
         onExit: function () {},
 
         onPress: function () {
-            this.getOwnerComponent().getRouter().navTo("Page2");
-        },
+            this.getOwnerComponent().getRouter().navTo("Page2",{
+                value: this.byId("input").getValue()
+            });
+        }
     });
 });
