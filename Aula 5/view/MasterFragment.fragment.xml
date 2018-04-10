@@ -12,27 +12,27 @@
                 <columns>
                     <Column>
                         <header>
-                            <Text text="Status" />
+                            <Text text="{i18n>status}" />
                         </header>
                     </Column>
                     <Column>
                         <header>
-                            <Text text="Nome do Produto" />
+                            <Text text="{i18n>nomeProd}" />
                         </header>
                     </Column>
                     <Column>
                         <header>
-                            <Text text="Quantidade" />
+                            <Text text="{i18n>qtd}" />
                         </header>
                     </Column>
                     <Column>
                         <header>
-                            <Text text="Preço" />
+                            <Text text="{i18n>preco}" />
                         </header>
                     </Column>
                     <Column>
                         <header>
-                            <Text text="Nome do Remetente" />
+                            <Text text="{i18n>nomeRmt}" />
                         </header>
                     </Column>
                 </columns>
@@ -49,7 +49,7 @@
 
                             <ObjectIdentifier text="{produto>ProductName}" />
                             <ObjectNumber number="{produto>Quantity}" />
-                            <ObjectNumber number="{produto>ExtendedPrice}" />
+                            <ObjectNumber number="R$ {produto>ExtendedPrice}" />
                             <ObjectIdentifier text="{produto>ShipperName}" />
                         </cells>
                     </ColumnListItem>

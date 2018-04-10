@@ -4,7 +4,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     controllerName="treinamento.ui5.controller.Page2">
     <Page 
-        title="Pagina 2"
+        title="{i18n>pag2}"
         showNavButton="true"
         navButtonPress="onNavPress">
     </Page>
