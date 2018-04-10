@@ -13,7 +13,7 @@ sap.ui.define([
         onExit: function () {},
 
         onPress: function () {
-
+            this.getOwnerComponent().getRouter().navTo("Page2");
         },
     });
 });

@@ -3,6 +3,5 @@
     xmlns:core="sap.ui.core" >
 
     <Input id="input" placeholder="Insira o dado no campo" />
-    <CheckBox id="checkbox" text="Texto do Checkbox" />
-    
+    <Button id="Nilo" press="onPress" text="Nilo"/>
 </core:FragmentDefinition>
