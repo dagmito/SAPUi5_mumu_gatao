@@ -14,8 +14,12 @@ sap.ui.define([
 
         onPress: function () {
             this.getOwnerComponent().getRouter().navTo("Page2",{
-                value: this.byId("input").getValue()
+                // value: this.byId("input").getValue()
             });
+        },
+
+        onPark: function(){
+            var x;
         }
     });
 });

@@ -2,6 +2,60 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core" >
 
+    <GenericTile id="vaga1" header="Vaga: Disponível" subheader="Motorista: " press="onPress"
+        class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://border">
+        <tileContent>
+            <TileContent>
+                <content>
+                    <Button id="btnVaga1" press="onPark" text="Estacionar" />
+                </content>
+            </TileContent>
+        </tileContent>
+    </GenericTile>
+
+    <GenericTile id="vaga2" header="Vaga: Disponível" subheader="Motorista: " press="onPress"
+        class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://border">
+        <tileContent>
+            <TileContent>
+                <content>
+                    <Button id="btnVaga2" press="onPark" text="Estacionar" />
+                </content>
+            </TileContent>
+        </tileContent>
+    </GenericTile>
+
+    <GenericTile id="vaga3" header="Vaga: Disponível" subheader="Motorista: " press="onPress"
+        class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://border">
+        <tileContent>
+            <TileContent>
+                <content>
+                    <Button id="btnVaga3" press="onPark" text="Estacionar" />
+                </content>
+            </TileContent>
+        </tileContent>
+    </GenericTile>
     
-    
+    <GenericTile id="vaga4" header="Vaga: Disponível" subheader="Motorista: " press="onPress"
+        class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+        headerImage="sap-icon://border">
+        <tileContent>
+            <TileContent>
+                <content>
+                    <Button id="btnVaga4" press="onPark" text="Estacionar" />
+                </content>
+            </TileContent>
+        </tileContent>
+    </GenericTile>
+
+    <GenericTile id="vaga5" header="Vaga: Disponível" subheader="Motorista: " press="onPress"
+        class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+        headerImage="sap-icon://border">
+        <tileContent>
+            <TileContent>
+                <content>
+                    <Button id="btnVaga5" press="onPark" text="Estacionar" />
+                </content>
+            </TileContent>
+        </tileContent>
+    </GenericTile>
 </core:FragmentDefinition>
