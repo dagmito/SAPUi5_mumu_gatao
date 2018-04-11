@@ -52,7 +52,7 @@
                     </Column>
                 </columns>
                 <items>
-                    <ColumnListItem>
+                    <ColumnListItem type="Navigation" press="onPress" >
                         <cells>
                             <ObjectStatus 
                                 icon="{= ${produto>Status} === 'A' ? 'sap-icon://accept' :
@@ -62,7 +62,7 @@
                                           ${produto>Status} === 'B' ? 'Warning'  :
                                          'Error'}" />
 
-                            <ObjectIdentifier text="{produto>ProductName}" />
+                            <ObjectIdentifier title="{produto>ProductName}" />
                             <ObjectNumber number="{produto>Quantity}" />
                             <ObjectNumber number="R$ {produto>ExtendedPrice}" />
                             <ObjectIdentifier text="{produto>ShipperName}" />

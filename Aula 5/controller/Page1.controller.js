@@ -7,19 +7,20 @@ sap.ui.define([
     "use strict";
     return Controller.extend("treinamento.ui5.controller.Page1", {
 
-        onPress: function () {
+        onPress: function (evt) {
+            var oColumnListItem = evt.getSource();
+
             this.getOwnerComponent().getRouter().navTo("Page2", {
-                value: this.byId("input").getValue()
+                value: oColumnListItem.getCells()[1].getBinding("title")._getValue()
             });
         },
 
         onTranslate: function (bilola) {
 
             var i18n = this.getOwnerComponent().getModel("i18n");
-
             var lang = bilola.getParameter("state");
 
-            if  (lang) {
+            if  (lang) {
                 var i18nModel = new ResourceModel({
                     bundleName: "treinamento.ui5.i18n.i18n"
                 });
@@ -32,7 +33,7 @@ sap.ui.define([
             this.getOwnerComponent().setModel("i18n", i18nModel);
         },
 
-        onSearch: function(oEvent){
+        onSearch: function (oEvent) {
             var query = oEvent.getParameter("query");
             var filter = new Filter("ProductName", FO.Contains, query);
 
