@@ -5,10 +5,25 @@
         headerText="Painel"
         expandable="true"
         expanded="true" >
+        <Switch 
+            id="switch" 
+            customTextOn="PT"
+            customTextOff="EN"
+            change="onChangeLang"  >
+        </Switch>
         <content>
             <Table 
-                id="tabel" 
-                items="{ path: 'produto>/Produtos' }" >
+                id="table" 
+                items="{ path: 'produto>/Produtos',
+                         sorter:{
+                            path: 'Status' 
+                        } }" >
+                <headerToolbar>
+                    <Toolbar>
+                        <SearchField width="100%" search="onSearch" >
+                        </SearchField>
+                    </Toolbar>
+                </headerToolbar>
                 <columns>
                     <Column>
                         <header>
